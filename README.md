@@ -32,7 +32,8 @@ The system can now easily run with only a single command
 ```bash
 docker-compose up
 ```
-Docker will pull the MongoDB and Node.js images (if the machine did not have it before).
+Docker will pull the MongoDB and Node.js images (if the machine did not have it before)
+THe site can be accessed via http://localhost:3000 on your machine and  http://172.24.0.3:3000 on your network
 
 The services can be run on the background with command:
 ```bash
