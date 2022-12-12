@@ -9,7 +9,7 @@ To run this ensure the following are installed:
 
 -[MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
 
--[DockerCompose][https://docs.docker.com/compose/install/linux/]
+-[DockerCompose](https://docs.docker.com/compose/install/linux/)
 
 ## Run the System
 First, clone the repo and navigate into the wroking directory:
