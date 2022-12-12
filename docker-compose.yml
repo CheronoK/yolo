@@ -1,0 +1,39 @@
+version: "2.0"
+services:
+  client:
+    build: ./client
+    image: cheronok/yolo-client:1.0
+    entrypoint: npm start
+    ports:
+    - "3000:3000"
+    networks:
+      - my-network
+    tty: true 
+
+  backend:
+    build: ./backend
+    image: cheronok/yolo-backend:1.0
+    environment:
+    - MONGODB_URI=mongodb://mongodb:27017/yolomy
+    entrypoint: npm start
+    ports:
+      - "5000:5000"
+    networks:
+      - my-network
+    tty: true
+
+  mongodb:
+    image: mongo:latest
+    volumes:
+      - mongodb-data:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - my-network  
+
+networks:
+  my-network:
+    driver: bridge  
+
+volumes:
+  mongodb-data:
