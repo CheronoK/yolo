@@ -1,7 +1,7 @@
 # YOLO
 This is an E-Commerce platform.
 
-The environment uses Docker Compose to create two separate containers based on Microservices. The first one contains a web server created using React and Node.js and the second container, a MongoDB database.
+The environment uses Docker Compose to create two separate containers based on Microservices. The first one contains a web server created using React and Node.js and the second container, a MongoDB database.The Docker Compose also sets up a single network for the app where each container joins the default network and is both reachable by other containers on that network
 
 ## Requirements
 To run this ensure the following are installed:
