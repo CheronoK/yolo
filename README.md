@@ -1,23 +1,42 @@
-# Requirements
-Make sure that you have the following installed:
-- [node](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04) 
-- npm 
-- [MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/) and start the mongodb service with `sudo service mongod start`
+# YOLO
+This is an E-Commerce platform.
 
-## Navigate to the Client Folder 
- `cd client`
+The environment uses docker compose to create two separate containers based on microservices. The first one contains a web server created using React and Node.js and the second container, a MongoDB database.
 
-## Run the folllowing command to install the dependencies 
- `npm install`
+## Requirements
+To run this ensure the following are installed:
+-[Docker](https://docs.docker.com/get-docker/)
+-[MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
+-[DockerCompose][https://docs.docker.com/compose/install/linux/]
 
-## Run the folllowing to start the app
- `npm start`
+## Run the System
+First, clone the repo and navigate into the wroking directory:
+```bash
+cd yolo
+```
+Second, build the docker compose file by running
+```bash
+docker-compose build
+```
 
-## Open a new terminal and run the same commands in the backend folder
- `cd ../backend`
+The system can now easily run with only a single command
+```bash
+docker-compose up
+```
+Docker will pull the MongoDB and Node.js images (if the machine did not have it before).
 
- `npm install`
+The services can be run on the background with command:
+```bash
+docker-compose up -d
+```
+## Stop the System
+Stopping all the running conatiners is also simple with a single command:
+```bash
+docker-compose down
+```
 
- `npm start`
-
- ### Go ahead a nd add a product (note that the price field only takes a numeric input)
+To remove all containers, networks and all images used by any service in docker-compose.yml file, use the command:
+```bash
+docker-compose down --rmis all
+```
+## N/B While adding ta product, the price field only takes a numeric input.
