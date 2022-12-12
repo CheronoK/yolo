@@ -34,7 +34,7 @@ docker-compose up
 ```
 Docker will pull the MongoDB and Node.js images (if the machine did not have it before)
 
-The site can now be accessed via http://localhost:3000 on your machine and  http://172.24.0.3:3000 on your network
+The site can now be accessed via http://localhost:3000 on your machine.
 
 
 The services can be run on the background with command:
