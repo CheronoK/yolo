@@ -1,7 +1,7 @@
 # YOLO
 This is an E-Commerce platform.
 
-The environment uses docker compose to create two separate containers based on microservices. The first one contains a web server created using React and Node.js and the second container, a MongoDB database.
+The environment uses Docker Compose to create two separate containers based on Microservices. The first one contains a web server created using React and Node.js and the second container, a MongoDB database.
 
 ## Requirements
 To run this ensure the following are installed:
@@ -13,7 +13,7 @@ To run this ensure the following are installed:
 -[DockerCompose](https://docs.docker.com/compose/install/linux/)
 
 ## Run the System
-First, clone the repo and navigate into the wroking directory:
+First, clone the repo and navigate into the working directory:
 ```bash
 cd yolo
 ```
@@ -42,4 +42,9 @@ To remove all containers, networks and all images used by any service in docker-
 ```bash
 docker-compose down --rmis all
 ```
-## N/B While adding ta product, the price field only takes a numeric input.
+## N/B While adding a product, the price field only takes a numeric input.
+
+## Contributing
+Pull requests are welcome. 
+
+For major changes, please open an issue first to discuss what you would like to change.
