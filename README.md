@@ -33,7 +33,7 @@ The services can be run on the background with command:
 docker-compose up -d
 ```
 ## Stop the System
-Stopping all the running conatiners is also simple with a single command:
+Stopping all the running containers is also simple with a single command:
 ```bash
 docker-compose down
 ```
