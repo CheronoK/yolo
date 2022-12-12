@@ -6,7 +6,9 @@ The environment uses docker compose to create two separate containers based on m
 ## Requirements
 To run this ensure the following are installed:
 -[Docker](https://docs.docker.com/get-docker/)
+
 -[MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
+
 -[DockerCompose][https://docs.docker.com/compose/install/linux/]
 
 ## Run the System
